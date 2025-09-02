@@ -1,0 +1,75 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 20px;
+}
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: rgb(47, 47, 111);
+  font-weight: bold;
+}
+
+.collapsible-section {
+  width: 90%;
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.collapsible-title {
+  display: block;
+  background-color: #2b445e;
+  color: white;
+  padding: 15px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.collapsible-section input[type="checkbox"] {
+  display: none;
+}
+
+.collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease, padding 1s ease;
+  padding: 0 1px;
+}
+
+.collapsible-section input[type="checkbox"]:checked ~ .collapsible-content {
+  max-height: 500px;
+  padding: 10px;
+}
+.background {
+  background-image: url("images/cu.jpg.webp"); 
+  background-size: cover;
+  background-position: center;
+  filter: blur(3px);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+h1 {
+    color: rgb(35, 80, 112);
+}
